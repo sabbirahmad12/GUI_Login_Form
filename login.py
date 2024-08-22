@@ -48,7 +48,7 @@ def on_enter(e):
     username.delete(0, 'end')
 
 def on_leave(e):
-    name == username.get()
+    name = username.get()
     if name == '':
         username.insert(0, 'Username')
 
@@ -65,8 +65,8 @@ def on_enter(e):
     password.delete(0, 'end')
 
 def on_leave(e):
-    name == password.get()
-    if name == '':
+    pass_ = password.get()
+    if pass_ == '':
         password.insert(0, 'Password')
 
 password = Entry(frame, width= 30,fg = 'black', border=0, bg='white', font=('Microsoft YaHei UI Light',11))
